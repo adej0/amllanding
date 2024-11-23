@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#141414] text-white;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(to top, rgb(20, 20, 20) 0%, transparent 60%, rgba(20, 20, 20, 0.7) 100%);
+}
+
+.card-hover {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.card-hover:hover {
+  @apply transform scale-105 z-10;
+}
